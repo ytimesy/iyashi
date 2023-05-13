@@ -1,0 +1,10 @@
+<h1>癒しの泉</h1>
+<%= form_with url: conversations_path, method: :post do |form| %>
+  <%= form.text_field :body %>
+  <%= form.submit "Iyashi" %>
+<% end %>
+  <div class="msg-div">
+    <p>Your message: <%= @message.body %></p>
+    <p>AI response: <%= @message.ai_response %></p>
+  </div>
+
